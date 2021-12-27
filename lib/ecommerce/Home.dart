@@ -23,7 +23,11 @@ class _HomeState extends State<Home> {
     'https://cdn.pixabay.com/photo/2018/12/23/18/03/watch-3891591_1280.jpg',
     'https://cdn.pixabay.com/photo/2018/07/31/14/52/ecommerce-3575280_1280.jpg',
     'https://cdn.pixabay.com/photo/2020/10/31/06/41/cosmetics-5700385_1280.png',
-    'https://cdn.pixabay.com/photo/2021/04/20/11/13/product-photography-6193556_1280.jpg'
+    'https://cdn.pixabay.com/photo/2021/04/20/11/13/product-photography-6193556_1280.jpg',
+    'https://cdn.pixabay.com/photo/2021/12/09/20/58/christmas-cookies-6859116_1280.jpg',
+    'https://cdn.pixabay.com/photo/2021/01/03/13/57/gingerbread-5884607_1280.jpg',
+    'https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_1280.jpg',
+    'https://cdn.pixabay.com/photo/2017/10/24/07/13/mask-2883635_1280.jpg'
   ];
 
   /*All product list */
@@ -35,7 +39,12 @@ class _HomeState extends State<Home> {
     productListModel(5, "Product 5", "Product 5 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2018/07/31/14/52/ecommerce-3575280_1280.jpg'),
     productListModel(4, "Product 4", "Product 4 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2020/10/31/06/41/cosmetics-5700385_1280.png'),
     productListModel(5, "Product 5", "Product 5 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2019/03/12/09/18/tomatoes-4050245__340.jpg'),
-    productListModel(6, "Product 6", "Product 6 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/04/20/11/13/product-photography-6193556_1280.jpg')
+    productListModel(6, "Product 6", "Product 6 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/04/20/11/13/product-photography-6193556_1280.jpg'),
+    productListModel(7, "Product 7", "Product 7 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/12/09/20/58/christmas-cookies-6859116_1280.jpg'),
+    productListModel(8, "Product 8", "Product 8 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/01/03/13/57/gingerbread-5884607_1280.jpg'),
+    productListModel(9, "Product 9", "Product 9 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_1280.jpg'),
+    productListModel(10, "Product 10", "Product 10 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2017/10/24/07/13/mask-2883635_1280.jpg')
+
   ];
 
   @override
