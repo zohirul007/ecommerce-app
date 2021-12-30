@@ -1,5 +1,5 @@
 Privacy Policy for No College full Knowledge
-At bondidaspothik, accessible from Facebook.com/bondidaspothik, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by bondidaspothik and how we use it.
+At bondidaspothik, accessible from bondidaspothik, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by bondidaspothik and how we use it.
 
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
 
@@ -34,14 +34,13 @@ Like any other website, bondidaspothik uses 'cookies'. These cookies are used to
 For more general information on cookies, please read the Cookies article on Generate Privacy Policy website.
 
 Google DoubleClick DART Cookie
-Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – https://policies.google.com/technologies/ads
+Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – 
 
 Our Advertising Partners
 Some of advertisers on our site may use cookies and web beacons. Our advertising partners are listed below. Each of our advertising partners has their own Privacy Policy for their policies on user data. For easier access, we hyperlinked to their Privacy Policies below.
 
 Google
 
-https://policies.google.com/technologies/ads
 
 Advertising Partners Privacy Policies
 You may consult this list to find the Privacy Policy for each of the advertising partners of bondidaspothik.
