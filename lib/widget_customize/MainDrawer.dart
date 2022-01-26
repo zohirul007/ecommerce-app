@@ -104,7 +104,7 @@ class Maindrawer extends StatelessWidget {
                 ),
                 onTap: () {
 
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => aboutUs()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AboutUs()));
                   Fluttertoast.showToast(
                       msg: 'About Us', toastLength: Toast.LENGTH_LONG);
                 },

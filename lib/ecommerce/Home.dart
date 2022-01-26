@@ -6,7 +6,7 @@ import 'package:flutter_carousel_slider/carousel_slider_transforms.dart';
 import 'package:signup_flutter_app/modelClass/productListmodel.dart';
 import 'package:signup_flutter_app/widget_customize/MainDrawer.dart';
 
-import 'detailsView.dart';
+import 'ProductDetails.dart';
 
 class Home extends StatefulWidget {
 
@@ -15,9 +15,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _selectNavPosiotion = 1;
 
-  final List<String> imaglist = [
+    int _selectNavPosition = 1;
+
+  final List<String> imagelist = [
     'https://cdn.pixabay.com/photo/2021/08/23/18/37/tea-6568547_1280.jpg',
     'https://cdn.pixabay.com/photo/2015/09/26/09/09/hipster-958806_1280.jpg',
     'https://cdn.pixabay.com/photo/2018/12/23/18/03/watch-3891591_1280.jpg',
@@ -70,7 +71,7 @@ class _HomeState extends State<Home> {
               child: CarouselSlider.builder(
                   slideBuilder: (index){
                     return Container(
-                      child: Image.network(imaglist[index], fit: BoxFit.fill,),
+                      child: Image.network(imagelist[index], fit: BoxFit.fill,),
                     );
                   },
                   slideTransform: CubeTransform(),
@@ -80,7 +81,7 @@ class _HomeState extends State<Home> {
                   autoSliderDelay: Duration(seconds: 5),
                   enableAutoSlider: true,
                   unlimitedMode: true,
-                  itemCount: imaglist.length
+                  itemCount: imagelist.length
               ),
             ),
 
@@ -100,7 +101,7 @@ class _HomeState extends State<Home> {
                   itemBuilder: (BuildContext context, index){
                     return InkWell(
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsView(productlist[index])));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ProductDetails(productlist[index])));
                       },
                       child: Card(
                         elevation: 20,

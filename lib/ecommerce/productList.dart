@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:signup_flutter_app/modelClass/productListmodel.dart';
 
-import 'detailsView.dart';
+import 'ProductDetails.dart';
 
 
 class ProductList extends StatefulWidget {
@@ -19,9 +19,15 @@ class _ListproState extends State<ProductList> {
     productListModel(3, "Product 3", "Product 3 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2015/09/26/09/09/hipster-958806_1280.jpg'),
     productListModel(4, "Product 4", "Product 4 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2018/12/23/18/03/watch-3891591_1280.jpg'),
     productListModel(5, "Product 5", "Product 5 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2018/07/31/14/52/ecommerce-3575280_1280.jpg'),
-    productListModel(4, "Product 4", "Product 4 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2020/10/31/06/41/cosmetics-5700385_1280.png'),
-    productListModel(5, "Product 5", "Product 5 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2019/03/12/09/18/tomatoes-4050245__340.jpg'),
-    productListModel(6, "Product 6", "Product 6 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/04/20/11/13/product-photography-6193556_1280.jpg')
+    productListModel(6, "Product 6", "Product 6 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2020/10/31/06/41/cosmetics-5700385_1280.png'),
+    productListModel(7, "Product 7", "Product 7 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2019/03/12/09/18/tomatoes-4050245__340.jpg'),
+    productListModel(8, "Product 8", "Product 8 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/04/20/11/13/product-photography-6193556_1280.jpg'),
+    productListModel(9, "Product 9", "Product 9 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/12/09/20/58/christmas-cookies-6859116_1280.jpg'),
+    productListModel(10, "Product 10", "Product 10 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2021/01/03/13/57/gingerbread-5884607_1280.jpg'),
+    productListModel(11, "Product 11", "Product 11 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_1280.jpg'),
+    productListModel(12, "Product 12", "Product 12 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2017/10/24/07/13/mask-2883635_1280.jpg'),
+    productListModel(13, "Product 13", "Product 13 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2020/10/31/06/41/cosmetics-5700385_1280.png'),
+    productListModel(14, "Product 14", "Product 14 desc", 5, 2, 20, 100, 5, 'https://cdn.pixabay.com/photo/2015/09/26/09/09/hipster-958806_1280.jpg'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -35,7 +41,7 @@ class _ListproState extends State<ProductList> {
             return Card(
                 child: ListTile(
                   title: TextButton(onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsView(productlist[i])));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> ProductDetails(productlist[i])));
                   }, child: Text('${productlist[i].title}'),),
                   leading: Image.network(productlist[i].imageUrl),
                   trailing: Icon(Icons.account_tree_outlined),

@@ -4,10 +4,10 @@ import 'package:signup_flutter_app/modelClass/productListmodel.dart';
 
 
 class Invoice extends StatefulWidget {
-  final productListModel DetailsView;
+  final productListModel ProductDetails;
   int orderNo;
 
-  Invoice(this.DetailsView, this.orderNo);
+  Invoice(this.ProductDetails, this.orderNo);
 
   @override
   State<Invoice> createState() => _InvoiceState();
@@ -100,12 +100,12 @@ class _InvoiceState extends State<Invoice> {
                 color: Colors.white70,
                 child: ListTile(
                   leading: Image.network(
-                    '${widget.DetailsView.imageUrl}',
+                    '${widget.ProductDetails.imageUrl}',
                     fit: BoxFit.cover,
                   ),
                   title: Align(
                       alignment: Alignment.centerRight,
-                      child: Text('${widget.DetailsView.title}')),
+                      child: Text('${widget.ProductDetails.title}')),
                 ),
               ),
             ),
@@ -122,7 +122,7 @@ class _InvoiceState extends State<Invoice> {
                       Align(
                           alignment: Alignment.centerRight,
                           child: Text(
-                              'Price of Product    :       ${widget.DetailsView.price}',
+                              'Price of Product    :       ${widget.ProductDetails.price}',
                               style: TextStyle(
                                   color: Colors.black, fontSize: 16))),
                       SizedBox(
@@ -140,7 +140,7 @@ class _InvoiceState extends State<Invoice> {
                       Align(
                           alignment: Alignment.centerRight,
                           child: Text(
-                              'Total Discount    :       ${widget.DetailsView.discount}',
+                              'Total Discount    :       ${widget.ProductDetails.discount}',
                               style: TextStyle(
                                   color: Colors.black, fontSize: 16))),
                       SizedBox(
@@ -149,7 +149,7 @@ class _InvoiceState extends State<Invoice> {
                       Align(
                           alignment: Alignment.centerRight,
                           child: Text(
-                              'Unit of Product     :   ${widget.DetailsView.unit}',
+                              'Unit of Product     :   ${widget.ProductDetails.unit}',
                               style: TextStyle(
                                   color: Colors.black, fontSize: 16))),
                       SizedBox(
@@ -162,7 +162,7 @@ class _InvoiceState extends State<Invoice> {
                       Align(
                           alignment: Alignment.centerRight,
                           child: Text(
-                              'Net Bill    :       ${(widget.DetailsView.price * widget.orderNo) - widget.DetailsView.discount}',
+                              'Net Bill    :       ${(widget.ProductDetails.price * widget.orderNo) - widget.ProductDetails.discount}',
                               style:
                                   TextStyle(color: Colors.red, fontSize: 20))),
                     ],
@@ -219,7 +219,7 @@ class _InvoiceState extends State<Invoice> {
                             });
                         //
                       },
-                      child: Text('Cash In Delivery',
+                      child: Text('Cash On Delivery',
                           style: TextStyle(color: Colors.white, fontSize: 20))),
                 ),
               ],
